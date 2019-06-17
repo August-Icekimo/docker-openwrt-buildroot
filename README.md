@@ -1,6 +1,5 @@
 docker-openwrt-buildroot
 ========================
-[![Docker Build Status](https://img.shields.io/docker/build/noonien/openwrt-buildroot.svg)](https://hub.docker.com/r/noonien/openwrt-buildroot)
 [![License: MIT](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/noonien/docker-openwrt-buildroot/blob/master/LICENSE)
 
 
@@ -13,7 +12,7 @@ the user `openwrt` was created. The buildroot can be found in
 
 To run a shell in the buildroot, execute the following command:
 ```sh
-docker run -it noonien/openwrt-buildroot bash
+docker run -it August-Icekimo/openwrt-buildroot /bin/bash
 ```
 
 More information on how to use this buildroot can be found on the
