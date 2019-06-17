@@ -21,4 +21,5 @@ RUN ~/openwrt/scripts/feeds update -a &&\
  ~/openwrt/scripts/feeds install  shadow sudo bash rsync nginx openssh\
  git git-gitweb gitolite fossil autossh fwknop fwknopd luci-app-fwknopd squid acme clamav
 
+RUN cd ~/openwrt/package/kernel && mkdir rtl8168 ; cd rtl8168 && git clone git@github.com:BROBIRD/openwrt-r8168.git
 #ADD https://www.icekimo.idv.tw/openwrt/$devconf .config
