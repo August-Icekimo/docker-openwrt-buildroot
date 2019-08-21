@@ -23,5 +23,4 @@ RUN ~/openwrt/scripts/feeds update -a &&\
  squid acme clamav ddns-scripts luci luci-app-fwknopd luci-app-ddns django\
  samba36-server samba36-net luci-app-samba luci-app-wol libpam libssh2 libgnutls libidn2
 
-RUN wget https://raw.githubusercontent.com/August-Icekimo/docker-openwrt-buildroot/master/18.06/archerC7v5/ac7v5.config ~/openwrt/.config
-RUN cd ~/openwrt && make download
+RUN cd /home/openwrt/openwrt && wget https://raw.githubusercontent.com/August-Icekimo/docker-openwrt-buildroot/master/18.06/archerC7v5/ac7v5.config -O .config && make download
