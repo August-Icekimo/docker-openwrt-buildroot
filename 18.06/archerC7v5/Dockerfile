@@ -20,7 +20,7 @@ RUN git clone git://git.openwrt.org/openwrt/openwrt.git -b openwrt-18.06
 RUN ~/openwrt/scripts/feeds update -a &&\
  ~/openwrt/scripts/feeds install shadow sudo bash rsync nginx openssh tmux vim\
  git git-gitweb gitolite fossil autossh fwknop fwknopd python3 php7 python screen\
- squid acme clamav ddns-scripts luci luci-app-fwknopd luci-app-ddns \
+ isc-dhcp socat squid acme clamav ddns-scripts luci luci-app-fwknopd luci-app-ddns \
  luci-app-wol luci-app-acme acme-dnsapi libpam libssh2 libgnutls libidn2
 
 RUN cd /home/openwrt/openwrt && wget https://raw.githubusercontent.com/August-Icekimo/docker-openwrt-buildroot/master/18.06/archerC7v5/ac7v5.config -O .config && make download
