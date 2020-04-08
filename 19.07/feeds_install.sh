@@ -11,7 +11,7 @@
 # wget https://raw.githubusercontent.com/August-Icekimo/docker-openwrt-buildroot/master/19.07/archer-c7-v5.config -O .config && make download
 
 # 下載特殊包
-git clone https://github.com/BROBIRD/openwrt-r8168.git ./openwrt/package/kernel/openwrt-r8168
+# git clone https://github.com/BROBIRD/openwrt-r8168.git /var/lib/jenkins/workspace/Openwrt/package/kernel/rtl8168
 
 # 編譯指令
 make clean
